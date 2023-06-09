@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Address - syncarta</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">syncarta</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="developers.html">Developers</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>New Address</h1>
+    <form action="manage-address.html" method="POST">
+      <div class="form-group">
+        <label for="street">Street</label>
+        <input type="text" id="street" name="street" required>
+      </div>
+      <div class="form-group">
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" required>
+      </div>
+      <div class="form-group">
+        <label for="state">State</label>
+        <input type="text" id="state" name="state" required>
+      </div>
+      <div class="form-group">
+        <label for="zipcode">Zip Code</label>
+        <input type="text" id="zipcode" name="zipcode" required>
+      </div>
+      <input type="submit" value="Save">
+    </form>
+  </div>
+</body>
+</html>

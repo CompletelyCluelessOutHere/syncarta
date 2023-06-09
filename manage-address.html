@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Manage Address - syncarta</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">syncarta</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="developers.html">Developers</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>Manage Address</h1>
+    <?php
+    if (isset($_POST['street']) && isset($_POST['city']) && isset($_POST['state']) && isset($_POST['zipcode'])) {
+      $street = $_POST['street'];
+      $city = $_POST['city'];
+      $state = $_POST['state'];
+      $zipcode = $_POST['zipcode'];
+      // Save the address and display it here
+      echo "<p>Your address:</p>";
+      echo "<p>$street</p>";
+      echo "<p>$city, $state $zipcode</p>";
+    } else {
+      echo "<p>Please add an address in the new address tab.</p>";
+    }
+    ?>
+  </div>
+</body>
+</html>
